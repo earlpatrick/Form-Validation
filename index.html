@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <style>
+    .label{
+      margin-left: 100px;
+      padding: 20px;
+    }
+    .butt{
+      padding: 20px;
+      display: flex;
+      justify-content: center;
+    }
+  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eventinator.com</title>
+    <script src="index.js"></script>
+</head>
+<body>
+    <form>
+        <fieldset>
+            <legend>Create a new Event</legend>
+
+            <div class="label"><br><label>Event Type:<select id = "type" required>
+                <option value = "1">Birhtday</option>
+                <option value = "2">Wedding</option>
+                <option value = "3">Debut</option>
+                <option value = "4">Funeral</option>
+                <option value = "5" selected>Choose One</option>
+              </select></label><br><br><br>
+            
+
+            <label>Event Title: <input type="text" required></label><br><br><br>
+            <label>Event Dates: <input type="date" required></label><label> to <input type="date" required></label><br><br><br>
+            <label>Posting Date: <input type="datetime-local" required></label><br><br><br>
+          
+            <input type="checkbox"><label>Is Registration Requierd?</label><br><br>
+            <input type="checkbox"><label>Is this event assciated with any Family Programs?</label><br><br>
+            <input type="checkbox"><label>Upon Registration Completion, Are users to receive an auto generated email?</label><br><br>
+            <input type="checkbox"><label>Is there a point of contact?</label><br><br>
+            <input type="checkbox"><label>Is there a hosting command point of contact?</label><br><br><br>
+          </div>
+            
+          <div class="butt">
+            <input type="submit" value="Save" onclick="confirmSave()">
+             <input type="reset" value="Cancel" onclick="confirmReset()">
+          </div>
+            </fieldset>
+    </form>
+</body>
+</html>
